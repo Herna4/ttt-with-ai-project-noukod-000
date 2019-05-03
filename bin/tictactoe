@@ -15,7 +15,7 @@ require_relative '../config/environment'
     Game.new.play
   elsif answer == "1"
     human_computer_game
-  elsif answer == "0"
+  elsif input == "0"
     computer_game
   end
   intro
@@ -33,4 +33,4 @@ def human_computer_game
   Game.new(player_1, player_2).play
 end
 
-intro
+game
